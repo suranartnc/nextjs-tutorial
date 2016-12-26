@@ -1,1 +1,7 @@
-export default () => <div>b</div>
+function greet() {
+  return (
+    <div>Hello World!</div>
+  )
+}
+
+export default greet
