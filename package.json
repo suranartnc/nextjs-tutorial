@@ -1,0 +1,28 @@
+{
+  "name": "nextjs-tutorial",
+  "version": "1.0.0",
+  "description": "A tutorial about Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suranartnc/nextjs-tutorial.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Suranart Niamcome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suranartnc/nextjs-tutorial/issues"
+  },
+  "homepage": "https://github.com/suranartnc/nextjs-tutorial#readme",
+  "dependencies": {
+    "next": "^1.2.3"
+  }
+}
