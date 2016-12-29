@@ -6,6 +6,14 @@ import Footer from '../components/Footer'
 
 export default function page(WrappedComponent) {
   class Page extends Component {
+
+    static async getInitialProps(ctx) {
+      if (WrappedComponent.getInitialProps) {
+        return await WrappedComponent.getInitialProps(ctx)
+      }
+      return null
+    }
+
     render() {
       return (
         <div>

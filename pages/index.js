@@ -9,9 +9,12 @@ class Homepage extends React.Component {
             {
               id: 1,
               title: 'Title 1'
+            }, {
+              id: 2,
+              title: 'Title 2'
             }
           ])
-        }, 5000)
+        }, 1000)
       })
     }
     const result = await fetching()
