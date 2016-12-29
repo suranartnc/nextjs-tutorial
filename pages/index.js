@@ -4,7 +4,6 @@ class Homepage extends React.Component {
   static async getInitialProps() {
     const fetching = function() {
       return new Promise((resolve, reject) => {
-        console.log('fetching...')
         setTimeout(() => {
           return resolve([
             {
@@ -16,14 +15,12 @@ class Homepage extends React.Component {
       })
     }
     const result = await fetching()
-    console.log('result=', result)
     return {
       posts: result,
     }
   }
 
   renderPosts() {
-    console.log(this.props)
     if (this.props.posts !== undefined) {
       return this.props.posts.map((post) => {
         return (
