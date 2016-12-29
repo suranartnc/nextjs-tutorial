@@ -1,15 +1,9 @@
 import React from 'react'
 
 import page from '../hocs/page'
-import requireAuth from '../hocs/requireAuth'
+import withAuth from '../hocs/withAuth'
 
 class Profile extends React.Component {
-  componentDidMount() {
-    const isAuthenticated = false
-    if (!isAuthenticated) {
-      this.props.url.replace('/')
-    }
-  }
   render() {
     return (
       <div>
@@ -19,4 +13,4 @@ class Profile extends React.Component {
   }
 }
 
-export default requireAuth(page(Profile))
+export default withAuth(page(Profile))
